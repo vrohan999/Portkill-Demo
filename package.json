@@ -1,0 +1,24 @@
+{
+  "name": "portkill-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Example Express app that uses portkill to free its port before starting.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "portkill 3000 --yes && node server.js",
+    "block": "node blocker.js",
+    "ports": "portkill --list",
+    "free": "portkill 3000"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@vrohan999/portkill": "^0.1.0"
+  }
+}
