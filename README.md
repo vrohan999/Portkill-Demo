@@ -79,6 +79,3 @@ The `dev` script in `package.json` is:
 
 To use a port other than 3000, set `PORT` when starting the server and change the number in the `dev` and `free` scripts to match.
 
-## License
-
-MIT
